@@ -28,7 +28,6 @@ export default {
                 const {
                     data
                 } = await this.$axios.get("https://randomuser.me/api/");
-                console.log(data.results);
                 this.list = data.results
             }catch{err=>{
                 console.log("err",err);
